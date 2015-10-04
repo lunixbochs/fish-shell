@@ -3384,12 +3384,14 @@ const wchar_t *reader_readline(int nchars)
                     comp_empty = handle_completions(comp, continue_after_prefix_insertion);
 
                     /* Show the search field if requested and if we printed a list of completions */
+                    /*
                     if (c == R_COMPLETE_AND_SEARCH && ! comp_empty && ! data->pager.empty())
                     {
                         data->pager.set_search_field_shown(true);
                         select_completion_in_direction(direction_next);
                         reader_repaint_needed();
                     }
+                    */
 
                 }
 
